@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/metropolis');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding-top: 70px;
+    background-image: url('src/image/Home\ BG.png');
+    background-size: 1980px 811px;
+    font-family: 'Metropolis', sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    background-size: cover;
+    padding: 2%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-left {
+    flex: 1;
+    padding-left: 15%;
+}
+
+.header-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    font-size: 17.94pt;
+    gap: 5%;
+    padding-left: 6%;
+    font-family: 'Metropolis', sans-serif;
+    font-weight: 300;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    font-size: 16pt;
+    font: bolder;
+    padding-right: 3%;
+}
+
+.Ass {
+    background-color: #f9b118;
+    border-radius: 20%;
+    padding: 1% 5%;
+    font-size: 16.94pt;
+    border: none;
+    width: 45%;
+    height: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    flex: 1;
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.search-form input[type="text"] {
+    width: 320px;
+    height: 40px;
+    padding: 5px;
+    border: 3px solid #f9b118;
+    border-radius: 10px;
+    color: #ffff;
+    background-color: rgb(26, 26, 26);
+}
+
+.search-form input[type="text"]::placeholder {
+    color: #fff;
+    font: 300;
+    font-size: medium;
+    background-image: url('src\svg\CHAT_ICON.svg');
+    background-size: 2px; /* Define o tamanho do SVG como 5px x 5px */
+    background-repeat: no-repeat; /* Evita a repetição do SVG */
+    padding-left: 10px;
+}
+
+.search-form button {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-form button {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    padding-top: 5%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image-container img {
+    margin-left: 20px;
+    margin-right: 15px;
+    /* adiciona margem à direita para separar da descrição e do form */
+}
+
+@media screen and (max-width: 768px) {
+
+    /* aplica as alterações abaixo apenas em telas menores que 768px */
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        margin-left: 15px;
+        /* adiciona margem à esquerda para separar da descrição e do form */
+        justify-content: center;
+    }
+}
